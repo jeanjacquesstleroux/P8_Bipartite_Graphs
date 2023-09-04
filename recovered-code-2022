@@ -101,3 +101,14 @@ adjacencyMatrix = input(enterGraph);
 disp('Matching:');
 disp(matching);
 fprintf('Number of Perfect Matchings: %d\n', numPerfectMatchings);
+
+G = graph(adjacencyMatrix);
+
+% Plot the bipartite graph
+figure;
+h = plot(G, 'Layout', 'force', 'NodeLabel', {});
+highlight(h, matching(:, 1), matching(:, 2), 'EdgeColor', 'r', 'LineWidth', 2);
+
+title('Bipartite Graph with Perfect Matching');
+xlabel('Side A');
+ylabel('Side B');
