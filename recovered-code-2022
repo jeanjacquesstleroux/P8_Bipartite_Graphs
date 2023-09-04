@@ -1,8 +1,5 @@
 % Recovered this code -- 2022
 
-Certainly, I've integrated the input checks into the `HungarianAlgorithm` function as you requested. Here's the updated code:
-
-```matlab
 function [matching, numPerfectMatchings] = HungarianAlgorithm(adjacencyMatrix)
     % Check if the adjacency matrix is square and bipartite.
     [numRows, numCols] = size(adjacencyMatrix);
@@ -108,4 +105,3 @@ adjacencyMatrix = input(prompt);
 disp('Matching:');
 disp(matching);
 fprintf('Number of Perfect Matchings: %d\n', numPerfectMatchings);
-```
