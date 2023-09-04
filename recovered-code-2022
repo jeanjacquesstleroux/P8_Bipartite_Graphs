@@ -1,10 +1,18 @@
 % Recovered this code -- 2022
 
+Certainly, I've integrated the input checks into the `HungarianAlgorithm` function as you requested. Here's the updated code:
+
+```matlab
 function [matching, numPerfectMatchings] = HungarianAlgorithm(adjacencyMatrix)
     % Check if the adjacency matrix is square and bipartite.
     [numRows, numCols] = size(adjacencyMatrix);
     if numRows ~= numCols
         error('Input matrix is not square. It should be a bipartite graph adjacency matrix.');
+    end
+
+    % Check if the matrix is binary (contains only 0s and 1s)
+    if ~all(ismember(adjacencyMatrix(:), [0, 1]))
+        error('Input matrix should contain only 0s and 1s to represent a bipartite graph.');
     end
 
     % Initialize the cost matrix for the Hungarian algorithm.
@@ -85,3 +93,19 @@ function [matching, numPerfectMatchings] = HungarianAlgorithm(adjacencyMatrix)
         end
     end
 end
+
+% Main body
+disp('Hungarian Algorithm for Bipartite Graph Matching');
+
+% Prompt the user to input the adjacency matrix
+prompt = 'Enter the adjacency matrix for the bipartite graph (each row separated by spaces):\n';
+adjacencyMatrix = input(prompt);
+
+% Call the HungarianAlgorithm function with the user-inputted matrix
+[matching, numPerfectMatchings] = HungarianAlgorithm(adjacencyMatrix);
+
+% Display the matching and the number of perfect matchings
+disp('Matching:');
+disp(matching);
+fprintf('Number of Perfect Matchings: %d\n', numPerfectMatchings);
+```
