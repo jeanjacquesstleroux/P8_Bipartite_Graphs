@@ -1,4 +1,3 @@
-% Recovered this code -- 2022
 
 function [matching, numPerfectMatchings] = HungarianAlgorithm(adjacencyMatrix)
     % Check if adjacency matrix is square and bipartite
@@ -12,7 +11,7 @@ function [matching, numPerfectMatchings] = HungarianAlgorithm(adjacencyMatrix)
         error('Input matrix should contain only 0s and 1s');
     end
 
-    % Initialize the cost matrix for the Hungarian algorithm.
+    % Initialize the cost matrix for the Hungarian algorithm
     costMatrix = ones(numRows, numCols) * max(adjacencyMatrix(:)) - adjacencyMatrix;
 
     % Step 1: Row reduction
