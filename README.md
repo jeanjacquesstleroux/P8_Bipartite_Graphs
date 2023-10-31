@@ -11,7 +11,7 @@ Welcome to the repository for Professor Ko & JJ's bipartite graph backend code.
 
 ## :book: Introduction
 
-This repository contains the source code for P(8) in Bipartite Graphs, a project led by Professor Liling Ko and Jean-Jacques St. Leroux. Bipartite graphs are a special class of graphs, and this project aims to implement certain algorithms and functionality related to them.
+This repository contains the source code for P(8) in Bipartite Graphs, a project led by Professor Liling Ko and Jean-Jacques St. Leroux. This project aims to implement a computational methodology to determine P(8)-induced graphs.
 
 ## :rocket: Getting Started
 
