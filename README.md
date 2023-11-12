@@ -15,16 +15,12 @@ This repository contains the source code for P(8) in Bipartite Graphs, a project
 
 ## :rocket: Getting Started
 
-Before using this code, make sure you have the necessary software and dependencies installed. You may need **Python** installed on your system, but **MATLAB** was used for preliminary/scrap work.
+Before using this code, make sure you have the necessary software and dependencies installed. You need **Python** installed on your system, but **MATLAB** was used for preliminary/scrap work, specifically on creating an unrelated algorithm to help understand the usage of adjacency matrices in bipartite graphs.
 
 Within **Python**, you will need the following packages:
 - NumPy
 - NetworkX
 - Matplotlib (for visualization)
-
-## :computer: Usage
-
-Provide instructions on how to use the code, including any setup, configuration, or examples if applicable.
 
 ## :handshake: Contributing
 
